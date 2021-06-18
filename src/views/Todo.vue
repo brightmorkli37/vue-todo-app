@@ -84,7 +84,7 @@
     methods: {
       addTask(){
         let newTask = {
-          id: Date.now,
+          id: Math.floor((Math.random() * 100) + 1),
           title: this.newTaskTitle,
           done: false,
         }
